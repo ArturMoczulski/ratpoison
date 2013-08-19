@@ -5,6 +5,19 @@
 # Licence: BSD3 license
 # github.com/ArturMoczulski/ratpoison
 #
+# This is the configuration of my ratpoison
+# window manager. I am in the process of
+# switching to completely mouseless computer
+# usage. It boosts efficiency and forces the
+# user to continously learn new tools,
+# expanding outside of your comfot zones.
+#
+# I am a regular Vim user, thus getting
+# into highly keyboard-driven usage is
+# coming very naturally to me. Recently
+# I'm also testing Vimperator or Vrome 
+# browser to possibly expand my toolset.
+#
 
 #########################################
 # Startup {
