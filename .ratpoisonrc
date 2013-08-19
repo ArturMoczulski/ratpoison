@@ -1,0 +1,10 @@
+# escape key
+escape C-z
+
+# applications
+bind f exec firefox
+bind v exec gvim
+bind h exec google-chrome
+
+# ratpoison workspaces
+exec /usr/bin/rpws init 6 -k
