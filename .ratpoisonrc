@@ -1,10 +1,59 @@
-# escape key
-escape C-z
+# .ratpoisonrc - window manager configuration
+#
+# Copyright (C) 2013 by Artur Moczulski
+# Author: Artur Moczulski <artur.moczulski@gmail.com>
+# Licence: BSD3 license
+# github.com/ArturMoczulski/ratpoison
+#
 
-# applications
-bind f exec firefox
-bind v exec gvim
-bind h exec google-chrome
+#########################################
+# Startup {
 
-# ratpoison workspaces
-exec /usr/bin/rpws init 6 -k
+  # work in my directory
+  chdir /home/arturmoczulski
+
+  # enable workspaces
+  exec /usr/bin/rpws init 6 -k
+
+# }
+
+#########################################
+# Look & feel {
+
+  # get rid of the welcome message
+  startup_message off
+
+  # get the mouse pointer out of the way
+  banish
+
+  # prompt in the center
+  set bargravity center
+
+# }
+
+#########################################
+# Applications aliases {
+
+  # Web browsers
+  alias firefox exec firefox
+  alias google-chrome exec google-chrome
+
+  # Text editors
+  alias gvim exec gvim
+
+# }
+
+#########################################
+# Key mappings {
+
+  # escape key
+  escape C-space
+
+  # mutliple screens usability
+
+  # applications
+  bind f firefox
+  bind h google-chrome
+  bind v gvim
+
+# }
