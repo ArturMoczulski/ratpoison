@@ -41,6 +41,8 @@
 
   # prompt in the center
   set bargravity center
+  # get rid of the border causing ugly gaps
+  set border 0
 
 # }
 
