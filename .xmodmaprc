@@ -1,0 +1,22 @@
+! .xmodmaprc - keyboard keys config
+!
+! Copyright (C) 2013 by Artur Moczulski
+! Author: Artur Moczulski <artur.moczulski@gmail.com>
+! Licence: BSD3 license
+! github.com/ArturMoczulski/ratpoison
+!
+! This file should be run as an argument to
+! xmodmap at the startup of your working
+! environment. The actual command is:
+! `xmodmap .xmodmaprc`
+! To make it effective on OS startup the
+! above line needs to be added to .xinitrc
+!
+! Main purpose of this remapping is to allow
+! ratpoison WM to use CapsLock as it's 
+! escape sequence.
+!
+
+! Exchaning caps lock for F13
+remove lock = Caps_Lock
+keycode 66 = F13

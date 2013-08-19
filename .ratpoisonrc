@@ -59,8 +59,11 @@
 #########################################
 # Key mappings {
 
+  # enabling CapsLock as F13
+  exec xmodmap ~/.xmodmaprc
+
   # escape key
-  escape C-space
+  escape F13
 
   # mutliple screens usability
 
