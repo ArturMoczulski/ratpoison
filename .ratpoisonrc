@@ -70,6 +70,10 @@
   # rearranging basic commands
   # note: k is used for Vim-like motion
   unbind k
+  unbind Up
+  unbind Down
+  unbind Left
+  unbind Right
 
   # close current frame (with the program running inside)
   # note: "just delete" has been unbound from `k`
@@ -87,6 +91,8 @@
   bind l focusright
 
   # mutliple screens usability
+  bind Left prevscreen
+  bind Right nextscreen
 
   # applications
   bind f firefox
