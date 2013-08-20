@@ -77,6 +77,7 @@
 
   # close current frame (with the program running inside)
   # note: "just delete" has been unbound from `k`
+  bind A-Escape delete
   alias dispose exec ratpoison -c "delete" && ratpoison -c "remove"
   bind C-Escape dispose
 
