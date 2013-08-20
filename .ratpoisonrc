@@ -40,7 +40,7 @@
   banish
 
   # prompt in the center
-  set bargravity center
+  set bargravity s
   # get rid of the border causing ugly gaps
   set border 0
 
@@ -67,11 +67,30 @@
   # escape key
   escape F13
 
+  # rearranging basic commands
+  # note: k is used for Vim-like motion
+  unbind k
+
+  # close current frame (with the program running inside)
+  # note: "just delete" has been unbound from `k`
+  alias dispose exec ratpoison -c "delete" && ratpoison -c "remove"
+  bind C-Escape dispose
+
+  # frames management
+  bind Home undo
+  bind End redo
+
+  # Vim-like motions
+  bind h focusleft
+  bind k focusup
+  bind j focusdown
+  bind l focusright
+
   # mutliple screens usability
 
   # applications
   bind f firefox
-  bind h google-chrome
+  bind g google-chrome
   bind v gvim
 
 # }
