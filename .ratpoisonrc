@@ -92,8 +92,8 @@
   bind l focusright
 
   # mutliple screens usability
-  bind Left prevscreen
-  bind Right nextscreen
+  bind C-h prevscreen
+  bind C-l nextscreen
 
   # applications
   bind f firefox
