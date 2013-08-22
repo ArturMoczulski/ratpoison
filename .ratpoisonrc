@@ -40,14 +40,14 @@
   banish
 
   # prompt in the center
-  set bargravity s
+  set bargravity c
   # set bright border for visiblity of
   # current focus
   set border 1
 
   # colorscheme
-  set fgcolor #AFD700
-  set bgcolor #005F00
+  set bgcolor #AFD700
+  set fgcolor #005F00
 
 # }
 
