@@ -41,8 +41,13 @@
 
   # prompt in the center
   set bargravity s
-  # get rid of the border causing ugly gaps
-  set border 0
+  # set bright border for visiblity of
+  # current focus
+  set border 1
+
+  # colorscheme
+  set fgcolor #AFD700
+  set bgcolor #005F00
 
 # }
 
