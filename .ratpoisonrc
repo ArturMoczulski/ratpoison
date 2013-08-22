@@ -40,7 +40,7 @@
   banish
 
   # prompt in the center
-  set bargravity s
+  set bargravity c
   # set bright border for visiblity of
   # current focus
   set border 1
