@@ -22,8 +22,11 @@
 #########################################
 # Startup {
 
+  # fix the multiple monitor set up in VM ware
+  exec /usr/bin/vmware-user
+
   # work in my directory
-  chdir /home/arturmoczulski
+  chdir /home/artur
 
   # enable workspaces
   exec /usr/bin/rpws init 6 -k
@@ -43,11 +46,12 @@
   set bargravity c
   # set bright border for visiblity of
   # current focus
-  set border 1
+  set border 5
 
   # colorscheme
   set bgcolor #AFD700
   set fgcolor #005F00
+  set fwcolor #AFD700
 
 # }
 
@@ -67,7 +71,10 @@
 # Key mappings {
 
   # enabling CapsLock as F13
-  exec xmodmap ~/.xmodmaprc
+  # exec xmodmap .xmodmaprc
+
+  # switch to dvorak layout
+  exec .ratpoison/dvorak.sh
 
   # escape key
   escape F13
@@ -79,6 +86,10 @@
   unbind Down
   unbind Left
   unbind Right
+  # unbinding kill - this is really annoying
+  # when using the multiple screens key mappings
+  # like below
+  unbind C-k
 
   # close current frame (with the program running inside)
   # note: "just delete" has been unbound from `k`
@@ -89,16 +100,13 @@
   # frames management
   bind Home undo
   bind End redo
+  
+  # Below are being enabled in the switch kb
+  # layout bash scripts already
 
-  # Vim-like motions
-  bind h focusleft
-  bind k focusup
-  bind j focusdown
-  bind l focusright
-
-  # mutliple screens usability
-  bind C-h prevscreen
-  bind C-l nextscreen
+  # kb layout control
+  alias switchkb exec .ratpoison/kbswitch.sh
+  bind Insert switchkb
 
   # applications
   bind f firefox

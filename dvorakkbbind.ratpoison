@@ -1,0 +1,9 @@
+# Vim-like motions
+bind h focusleft
+bind t focusup
+bind n focusdown
+bind s focusright
+
+# mutliple screens usability
+bind C-h prevscreen
+bind C-s nextscreen
